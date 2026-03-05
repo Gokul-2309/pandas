@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Developer Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 80px;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+color:#00d9ff;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#00d9ff;
+}
+
+/* hero section */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.profile-pic{
+width:200px;
+height:200px;
+border-radius:100%;
+object-fit:cover;
+border:4px solid #00d9ff;
+margin-bottom:20px;
+box-shadow:0 0 25px rgba(0,217,255,0.6);
+}
+
+.hero h1{
+font-size:60px;
+background:linear-gradient(90deg,#00d9ff,#8a2be2);
+-webkit-background-clip:text;
+color:transparent;
+animation:fadeUp 1.5s;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:#aaa;
+animation:fadeUp 2s;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:linear-gradient(90deg,#00d9ff,#8a2be2);
+color:white;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* sections */
+
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+section h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+/* skills */
+
+.skills{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.skill{
+padding:15px 25px;
+background:#1a1a1a;
+border-radius:20px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#00d9ff;
+color:black;
+}
+
+/* projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1a1a1a;
+padding:30px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,217,255,0.4);
+}
+
+/* contact */
+
+.contact a{
+color:#00d9ff;
+text-decoration:none;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+/* animation */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>MyPortfolio</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- hero -->
+
+<div class="hero">
+
+<img src="C:\Users\Admin\Desktop\portfolio\index.html\pic.jpeg"  class="profile-pic"> 
+
+<h1>Hi, I'm Gokul Mohan</h1>
+<p>Python Developer | Web Developer</p>
+
+<button class="btn">View My Work</button>
+
+</div>
+
+<!-- about -->
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a passionate developer who loves building modern web applications using Python and web technologies.</p>
+</section>
+
+<!-- skills -->
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">MySQL</div>
+<div class="skill">KNIME</div>
+<div class="skill">Tabulae</div>
+<div class="skill">Flask</div>
+<div class="skill">MS Excel</div>
+<div class="skill">Power BI</div>
+<div class="skill">Problem solving</div>
+</div>
+
+</section>
+
+<!-- projects -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Client portal project</h3>
+<p>Consolidate all the information in a GUI dashboard that is regularly updated.</p>
+</div>
+
+<div class="card">Cancer severity</h3>
+<p>To predict the severity of the cancer based on the habitual behaviour.</p>
+</div>
+
+<div class="card">
+<h3>Data Analysis</h3>
+<p>Analyzing data using Python libraries.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- contact -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: gokulms2309@gmail.com</p>
+<p>GitHub: https://github.  com/Gokul-2309</p>
+<p>LinkedIn: https://www.linkedin.com/in/gokul-m-892903216</p>
+
+</section>
+
+<footer>
+
+© 2026 Your Name
+
+</footer>
+
+</body>
+</html>
